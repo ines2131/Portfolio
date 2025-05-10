@@ -1,0 +1,12 @@
+//responsive design
+@mixin respond($breakpoint) {
+  @if $breakpoint == md {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+}
